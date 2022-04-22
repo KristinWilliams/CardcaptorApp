@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: pink;
+}
+
+.overlay {
+  position: fixed;
+  background-color: hsla(350, 100%, 88%, 0.55);
+  backdrop-filter: blur(2px);
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  font-size: 4rem;
+}
+
+.container button {
+  font-size: 4rem;
+  color: LightCoral;
+  text-align: center;
+  background-color: gold;
+  padding: 2rem;
+  width: 40rem;
+  border: none;
+  border-radius: 1rem;
+}
+
+.container .sakura-crd {
+  border: 2rem solid Cornsilk;
+}
+
+.card-selector-btn {
+  margin: 3rem auto;
+}
+
+.card-container {
+  padding: 6rem;
+  background-color: Cornsilk;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card-container img {
+  width: 40rem;
+  height: 60rem;
+  padding: 2rem;
+}
+
+.modal-container {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 12;
+}
+
+.name-back-btn {
+  padding: 2rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+h1 {
+  background-color: lightcoral;
+  padding: 2rem;
+  border-radius: 1rem;
+  color: cornsilk;
+  margin-right: 4rem;
+  font-size: 4rem;
+  filter: drop-shadow(6px 3px 3px hsla(0, 0, 0, 0.75));
+}
+
+button {
+  border: none;
+  background-color: lightcoral;
+  padding: 2rem;
+  margin-right: 4rem;
+  border-radius: 1rem;
+  color: cornsilk;
+  font-size: 4rem;
+  box-shadow: 3px 2px 2px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+
+button:hover {
+  box-shadow: 4px 3px 3px rgba(0, 0, 0, 0.25);
+}
+
+.description-container {
+  width: 70rem;
+  height: 60rem;
+  background-color: LightCoral;
+  margin: 3rem auto;
+  padding: 2rem;
+  border-radius: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+li {
+  list-style: none;
+  margin-bottom: 2rem;
+  font-size: 3rem;
+  color: cornsilk;
+}
+
+.hidden {
+  display: none;
+}
